@@ -14,17 +14,128 @@ html, body{
 
 body{
   background-color: #242424;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255,255,255,0.7);
+
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
 }
 
 header{
   min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header nav{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+header nav li:hover, .contact i:hover{
+  transform: scale(1.2);
+  color: rgba(255,255,255,0.9);
+  transition: transform 0.25s;
+}
+
+.logo{
+  position: absolute;
+  margin: 0;
+  font-size: 16px;
+  left: 2%;
+  top:3%;
 }
 
 .landing{
   width: 100%;
   background-image: url(../images/keyboard.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.7;
-  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  color: white;
+  min-height: 300px;
   
+}
+
+.landing h1{
+  font-size: 40px;
+  margin: 0;
+}
+
+.landing h2{
+  margin: 0;
+}
+
+.projects{
+  padding: 20px 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards{
+  width: 90%;
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-height: 300px; */
+  margin: 10px 0 30px 0;
+}
+
+.cards h1{
+  width: 100%;
+  text-align: center;
+}
+
+.cards img{
+  max-width: 100%;
+  max-height: 250px;
+  opacity: 0.7;
+}
+
+.contact-form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-form form{
+  width: 80%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input{
+  border-radius: 5px;
+  margin: 5px;
+  width: 80%;
+  opacity: 0.7;
+}
+
+.contact{
+  width: 100%;
+  list-style-type: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
 }
