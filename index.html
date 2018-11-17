@@ -30,9 +30,11 @@
   <section class="contact-form">
     <h2>Let's build something.</h2>
     <form data-form>
+      <input type="hidden" name="contact_number" id="">
       <input type="text" placeholder="Name">
       <input type="email" placeholder="Email">
       <input type="text" placeholder="Phone number">
+      <input type="textarea" name="message" id="" placeholder="Message">
       <input type="submit" name="submit" id="" value="Get in touch">
     </form>
     <!-- Simple contact form with database routing  -->
@@ -61,12 +63,6 @@
     </ul>
     <img src="./images/logo (1).png" alt="">
   </footer>
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_GrHNLcQ4diZHdAYx4qsid");
-    })();
-  </script>
   <script src="scripts/index.js"></script>
 </body>
 
