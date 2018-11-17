@@ -13,12 +13,11 @@
 </head>
 
 <body>
-  <header>
-    <!-- <img src="./images/bbLBlack.png" alt=""> -->
+  <header id="home">
     <nav>
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li> Featured Works</li></a>
-      <a href="lorenzosalvio.com"><li>Portfolio</li></a>
+      <a href="#home"><li>Home</li></a>
+      <a href="#works"><li> Featured Works</li></a>
+      <a href="http://lorenzosalvio.com" target="_blank"><li>Portfolio</li></a>
     </nav>
     <!-- Logo + branding, links to other sites (portfolio) -->
   </header>
@@ -30,7 +29,7 @@
   </section>
   <section class="contact-form">
     <h2>Let's build something.</h2>
-    <form action="">
+    <form data-form>
       <input type="text" placeholder="Name">
       <input type="email" placeholder="Email">
       <input type="text" placeholder="Phone number">
@@ -38,7 +37,7 @@
     </form>
     <!-- Simple contact form with database routing  -->
   </section>
-  <section class="projects">
+  <section class="projects" id="works">
     <div class="cards">
       <h1>PhotoSpotter</h1>
       <img src="images/desktopLanding.png" alt="">
@@ -60,7 +59,14 @@
         <li><a href="https://www.instagram.com/lorenzo.e.salvio/"><i class="fab fa-instagram"></i></a></li>
         <li><a href="https://www.facebook.com/lorenzo.salvio.9"><i class="fab fa-facebook"></i></a></li>
     </ul>
+    <img src="./images/logo (1).png" alt="">
   </footer>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_GrHNLcQ4diZHdAYx4qsid");
+    })();
+  </script>
   <script src="scripts/index.js"></script>
 </body>
 
